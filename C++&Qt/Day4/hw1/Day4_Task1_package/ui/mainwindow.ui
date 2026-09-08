@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="inputLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>600</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>문자를 입력하세요</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="keyboardWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>329</y>
+      <width>601</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #d9d9d9;
+border-radius: 10px;</string>
+    </property>
+    <widget class="QPushButton" name="key1Button">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>14</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㅣ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key2Button">
+     <property name="geometry">
+      <rect>
+       <x>159</x>
+       <y>14</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㆍ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="backspaceButton">
+     <property name="geometry">
+      <rect>
+       <x>449</x>
+       <y>14</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>⌫</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key3Button">
+     <property name="geometry">
+      <rect>
+       <x>304</x>
+       <y>14</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㅡ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key4Button">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>110</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㄱㅋ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key5Button">
+     <property name="geometry">
+      <rect>
+       <x>159</x>
+       <y>110</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㄴㄹ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key6Button">
+     <property name="geometry">
+      <rect>
+       <x>304</x>
+       <y>110</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㄷㅌ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="enterButton">
+     <property name="geometry">
+      <rect>
+       <x>449</x>
+       <y>110</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>↵</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key7Button">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>206</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㅂㅍ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key8Button">
+     <property name="geometry">
+      <rect>
+       <x>159</x>
+       <y>206</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㅅㅎ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key9Button">
+     <property name="geometry">
+      <rect>
+       <x>304</x>
+       <y>206</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㅈㅊ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="symbolButton">
+     <property name="geometry">
+      <rect>
+       <x>449</x>
+       <y>206</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>.,?!</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="numberButton">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>302</y>
+       <width>64</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>!#1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="languageButton">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>302</y>
+       <width>65</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>한/영</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key0Button">
+     <property name="geometry">
+      <rect>
+       <x>159</x>
+       <y>302</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>ㅇㅁ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="spaceButton">
+     <property name="geometry">
+      <rect>
+       <x>304</x>
+       <y>302</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>⎵</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hanjaButton">
+     <property name="geometry">
+      <rect>
+       <x>449</x>
+       <y>302</y>
+       <width>137</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #e9e9e9;
+}</string>
+     </property>
+     <property name="text">
+      <string>한자</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="chatTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>9</y>
+      <width>601</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
