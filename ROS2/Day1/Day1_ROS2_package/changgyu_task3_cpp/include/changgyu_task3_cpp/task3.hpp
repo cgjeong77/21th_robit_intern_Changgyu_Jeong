@@ -1,0 +1,28 @@
+#ifndef TASK3_HPP
+#define TASK3_HPP
+
+#include <rclcpp/rclcpp.hpp>
+#include <geometry_msgs/msg/twist.hpp>
+#include <turtlesim/srv/set_pen.hpp>
+#include <std_srvs/srv/empty.hpp>
+
+class Task3 : public rclcpp::Node
+{
+public:
+    Task3();
+    void run();
+
+private:
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub_;
+    rclcpp::Client<turtlesim::srv::SetPen>::SharedPtr pen_;
+    rclcpp::Client<std_srvs::srv::Empty>::SharedPtr reset_;
+
+    int mode_;
+
+    void move(double linear, double angular, double time);
+    void setPen(int r, int g, int b, int width);
+    void reset();
+    char getKey();
+};
+
+#endif
