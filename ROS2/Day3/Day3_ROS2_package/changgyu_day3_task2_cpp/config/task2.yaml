@@ -1,0 +1,9 @@
+traffic_light_node:
+  ros__parameters:
+    red_time: 2
+    green_time: 8
+    yellow_time: 3
+
+vehicle_node:
+  ros__parameters:
+    vehicle_speed: 2.0

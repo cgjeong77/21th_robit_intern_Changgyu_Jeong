@@ -1,0 +1,6 @@
+task1_controller:
+  ros__parameters:
+    pen_r: 0
+    pen_g: 0
+    pen_b: 255
+    pen_width: 8
