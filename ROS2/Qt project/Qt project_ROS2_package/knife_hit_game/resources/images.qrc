@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="disk.png">images/disk.png</file>
+        <file alias="knife.png">images/knife.png</file>
+        <file alias="apple_target.png">images/apple_target.png</file>
+        <file alias="apple_icon.png">images/apple_icon.png</file>
+        <file alias="remaining_knife_active.png">images/remaining_knife_active.png</file>
+        <file alias="remaining_knife_used.png">images/remaining_knife_used.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<package format="3">
+
+  <name>knife_hit_game</name>
+  <version>0.0.0</version>
+
+  <description>
+    ROS2와 Qt를 이용한 Knife Hit 게임
+  </description>
+
+  <maintainer email="changgyu@example.com">
+    changgyu
+  </maintainer>
+
+  <license>Apache-2.0</license>
+
+
+  <!-- ROS2 빌드 시스템 -->
+  <buildtool_depend>
+    ament_cmake
+  </buildtool_depend>
+
+
+  <!-- ROS2 Node -->
+  <depend>
+    rclcpp
+  </depend>
+
+
+  <!-- Topic 메시지 -->
+  <depend>
+    std_msgs
+  </depend>
+
+
+  <!-- Reset Service -->
+  <depend>
+    std_srvs
+  </depend>
+
+
+  <!-- Qt5 -->
+  <build_depend>
+    qtbase5-dev
+  </build_depend>
+
+  <exec_depend>
+    qtbase5-dev
+  </exec_depend>
+
+
+  <export>
+    <build_type>
+      ament_cmake
+    </build_type>
+  </export>
+
+</package>
