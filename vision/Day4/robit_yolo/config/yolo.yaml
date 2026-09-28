@@ -1,0 +1,22 @@
+camera_node:
+  ros__parameters:
+    topic: "/camera/image_raw"
+    hz: 30.0
+    camera_id: 0
+
+yolo_node:
+  ros__parameters:
+    hz: 8.0
+    model: "yolo26n.pt"
+    confidence: 0.25
+    imgsz: 416
+
+    class_ids: [0, 39, 41, 66, 67, 73]
+
+    class_names:
+      - "person"
+      - "bottle"
+      - "cup"
+      - "keyboard"
+      - "cell phone"
+      - "book"
